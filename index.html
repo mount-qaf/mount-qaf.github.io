@@ -5,39 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>گروه قاف</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="qaf.jpg">
     <style>
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            height: 100vh;
+            background-image: url('assets/qaf-i.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-family: Vazirmatn, sans-serif;
         }
 
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: fill;
-        }
 
         @media (max-width: 768px) {
-            .image-desktop {
-                display: none;
+            body {
+                background-image: url('assets/qaf-m.jpg');
             }
 
-            .image-mobile {
-                display: block !important;
+            .team-member img {
+                width: 200px;
+                height: 200px;
+
             }
         }
 
-        .image-mobile {
-            display: none;
+        .team-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            direction: rtl;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .team-member {
+            margin: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        .team-member p {
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
-    <img src="assets/qaf-i.jpg" alt="Qaf Group" class="image-desktop">
-
-    <img src="assets/qaf-m.jpg" alt="Qaf Group" class="image-mobile">
+    <div class="team-container">
+        <div class="team-member">
+            <img src="https://avatars2.githubusercontent.com/u/4971751?v=4&s=460" alt="Hamid Taheri">
+            <h3>حمید طاهری</h3>
+            <p>راهبر گروه</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/164159672?v=4" alt="Saeed Ebrahimian">
+            <h3>سعید ابراهیمیان</h3>
+            <p>مدیر محصول</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/189433216?v=4" alt="Niloufar Ahmadi">
+            <h3>نیلوفر احمدی</h3>
+            <p>طراح محصول</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/25822042?v=4" alt="Soroush Salehi">
+            <h3>سروش صالحی</h3>
+            <p>توسعه دهنده بکند</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/43041565?v=4" alt="Iman Kashi">
+            <h3>ایمان کاشی</h3>
+            <p>توسعه دهنده بکند</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/92272807?v=4" alt="Bahar Navab">
+            <h3>بهار نواب</h3>
+            <p>توسعه دهنده فرانت</p>
+        </div>
+        <div class="team-member">
+            <img src="https://avatars.githubusercontent.com/u/102456014?v=4" alt="Arta Sadoddin">
+            <h3>آرتا سعدالدین</h3>
+            <p>توسعه دهنده</p>
+        </div>
+    </div>
 </body>
 
 </html>
