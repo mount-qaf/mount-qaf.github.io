@@ -12,30 +12,18 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             background-image: url('assets/qaf-i.jpg');
             background-size: 100% 100%;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
             font-family: Vazirmatn, sans-serif;
-        }
-
-
-        @media (max-width: 768px) {
-            body {
-                background-image: url('assets/qaf-m.jpg');
-            }
-
-            .team-member img {
-                width: 200px;
-                height: 200px;
-
-            }
         }
 
         .team-container {
@@ -67,6 +55,45 @@
 
         .team-member p {
             margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-image: url('assets/qaf-m.jpg');
+                align-items: flex-start;
+                padding: 20px 0;
+            }
+
+            .team-container {
+                max-height: 85vh;
+                overflow-y: auto;
+                margin: 20px;
+                width: calc(100% - 40px);
+            }
+
+            .team-member img {
+                width: 200px;
+                height: 200px;
+            }
+
+            /* استایل اسکرول‌بار */
+            .team-container::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .team-container::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 4px;
+            }
+
+            .team-container::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+            }
+
+            .team-container::-webkit-scrollbar-thumb:hover {
+                background: rgba(255, 255, 255, 0.5);
+            }
         }
     </style>
 </head>
